@@ -8,7 +8,10 @@ const CONFIG = {
 }
 
 //Establish connection
+mongoose.set('strictQuery', true)
 mongoose.connect(DATABASE_URL, CONFIG)
+
+
 
 //Connection log events
 mongoose.connection

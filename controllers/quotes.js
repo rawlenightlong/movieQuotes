@@ -7,7 +7,7 @@ const router = express.Router()
 router.get('/', (req, res) => {
     Quote.find({})
     .then((quotes) => {
-        res.render('quotes/index.ejs')
+        res.render('quotes/index.ejs', {quotes})
     })
 })
 
@@ -24,4 +24,4 @@ router.get('/', (req, res) => {
 
 
 
-module.exprots = router
+module.exports = router
