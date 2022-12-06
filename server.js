@@ -4,6 +4,8 @@ require('dotenv').config()
 const morgan = require('morgan')
 const methodOverride = require('method-override')
 const PORT = process.env.PORT
+const Quote = require('./models/quotes')
+const quoteRouter = require('./controllers/quotes')
 
 
 
@@ -14,6 +16,7 @@ app.use(morgan('tiny')) // logging
 app.use(methodOverride("_method")) // override post requests for DELETE routes
 app.use(express.urlencoded({extended: true})) // parses url encoded bodies (create route requests)
 app.use(express.static("public")) // serve files from public folder
+app.use('/quotes', quoteRouter)
 
 
 // App Listener
