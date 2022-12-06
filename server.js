@@ -19,6 +19,11 @@ app.use(express.static("public")) // serve files from public folder
 app.use('/quotes', quoteRouter)
 
 
+// LANDING ROUTE
+app.get('/', (req, res) => {
+    res.redirect('/quotes')
+})
+
 // App Listener
 app.listen(PORT, (req, res) => {
     console.log(`Hey there Delilah, what's it like in Port ${PORT}`)
