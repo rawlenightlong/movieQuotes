@@ -9,9 +9,8 @@ const {Schema, model} = mongoose
 const quoteSchema = new Schema({
     quote: String,
     movie: String,
-    year: Number,
-    charcter: String,
-    genre: String,
+    character: String,
+    year: Number
 })
 
 const Quote = model("Quote", quoteSchema)
