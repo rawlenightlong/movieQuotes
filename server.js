@@ -4,7 +4,7 @@ require('dotenv').config()
 const morgan = require('morgan')
 const methodOverride = require('method-override')
 const PORT = process.env.PORT
-const DATABASE_URL = process.env.DATABASE_URL
+
 
 
 //////////////////
