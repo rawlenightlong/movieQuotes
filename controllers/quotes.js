@@ -14,17 +14,20 @@ router.get('/', (req, res) => {
     })
 })
 
-// NEW ROUTE
+// NEW ROUTE - GET
+router.get('/new', (req, res) => {
+    res.render('quotes/new.ejs')
+})
 
-// DESTROY ROUTE
+// DESTROY ROUTE - POST
 
-// UPDATE ROUTE
+// UPDATE ROUTE - POST
 
-// CREATE ROUTE
+// CREATE ROUTE - POST
 
-// EDIT ROUTE
+// EDIT ROUTE - GET
 
-// SHOW ROUTE
+// SHOW ROUTE - GET
 
 
 
