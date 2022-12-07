@@ -10,6 +10,7 @@ const router = express.Router()
 router.get('/', (req, res) => {
     Quote.find({})
     .then((quotes) => {
+        console.log(quotes)
         res.render('quotes/index.ejs', {quotes})
     })
 })
@@ -51,8 +52,9 @@ router.delete('/:id', (req, res) => {
 
 // SHOW ROUTE - GET
 router.get('/:id', (req, res) => {
-    const id = req.params.id
-    Quote.findById(id, (err, quote) => {
+    
+    console.log(req.params.id)
+    Quote.findById(req.params.id, (err, quote) => {
         res.render('quotes/show.ejs', {quote})
     })
 })
