@@ -10,14 +10,17 @@
     <h1>Rawle's Movie Quote Database</h1>
     <h4>"AY, I'm walkin' here!"</h4>
     <a href="/quotes/new"><button>Add a new quote!</button></a>
+
     <div class="quoteCard">
-        <% for (quote of quotes) {
-            <div>
-             <h3>
+        <% for (quote of quotes) { %>
+            <a href="quotes/:<%=quote._id%>">
+                <div>
+                    <h3>
                 "<%=quote.quote%>"
-             </h3>
-            </div>
-        } %> 
+                    </h3>
+                </div>
+            </a>
+   <%     } %> 
     </div>
     
 </body>
