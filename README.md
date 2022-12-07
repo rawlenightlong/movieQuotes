@@ -1,10 +1,10 @@
-#Rawle's Marvelous Movie Quote App
+# Rawle's Marvelous Movie Quote App
 
 ![](https://media.tenor.com/0o8TAJDGJcMAAAAC/midnight-cowboy-dustin-hoffman.gif)
 
 Utilizing MongoDB, Express, and a myriad of other tools, I'll create an app in which user's can store their favorite movie quotes!
 
-###Technology Used
+### Technology Used
 - Javascript
 - HTML
 - CSS
@@ -14,7 +14,7 @@ Utilizing MongoDB, Express, and a myriad of other tools, I'll create an app in w
 - Node
 - Trello
 
-#####Wireframe
+##### Wireframe
 ![](https://i.imgur.com/bicmWPZ.png)
 
 
@@ -30,14 +30,14 @@ Each Quote Card will be clickable and lead to a show page displaying:
 - The actor/actress that plays the character
 
 
-###Trello Board
+### Trello Board
 https://trello.com/b/s6UwdU6k/sei-turmeric-project-2-movie-quotes-databse
 
-###ERD
+### ERD
 ![](https://i.imgur.com/I6mdEiy.png)
 
 
-###Daily Plan
+### Daily Plan
 
 | Day | Goal |
 |-----|------|
@@ -50,5 +50,5 @@ https://trello.com/b/s6UwdU6k/sei-turmeric-project-2-movie-quotes-databse
 |7|BONUS: implementing IMDB link / movie poster functionality
 
 
-###Link to live page on Render:
+### Link to live page on Render:
 https://moviequoteapp.onrender.com/
