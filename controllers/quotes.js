@@ -19,15 +19,43 @@ router.get('/new', (req, res) => {
     res.render('quotes/new.ejs')
 })
 
-// DESTROY ROUTE - POST
-
-// UPDATE ROUTE - POST
-
 // CREATE ROUTE - POST
+router.post('/', (req, res) => {
+    Quote.create(req.body, (err, quote) => {
+        res.redirect("/")
+    })
+})
 
 // EDIT ROUTE - GET
+router.get('/:id/edit', (req, res) => {
+    res.render('quotes/edit.ejs')
+})
+
+
+
+// UPDATE ROUTE - POST
+router.put('/:id', (req, res) => {
+    const id = req.params.id
+    Quote.findByIdAndUpdate(id, req.body, {new: true}, (err, quote) => {
+        res.redirect('/')
+    })
+})
+
+// DESTROY ROUTE - POST
+router.delete('/:id', (req, res) => {
+    const id = req.params.id
+    Quote.findByIdAndDelete(id, (err, quote) => {
+        res.redirect('/')
+    })
+})
 
 // SHOW ROUTE - GET
+router.get('/:id', (req, res) => {
+    const id = req.params.id
+    Quote.findById(id, (err, quote) => {
+        res.render('quotes/show.ejs', {quote})
+    })
+})
 
 
 

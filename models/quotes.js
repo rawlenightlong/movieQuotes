@@ -8,9 +8,10 @@ const mongoose = require('./connection')
 const {Schema, model} = mongoose
 const quoteSchema = new Schema({
     quote: String,
-    movie: String,
     character: String,
-    year: Number
+    movie: String,
+    year: Number,
+    actor: String
 })
 
 const Quote = model("Quote", quoteSchema)
