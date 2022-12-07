@@ -15,10 +15,10 @@ Utilizing MongoDB, Express, and a myriad of other tools, I'll create an app in w
 - Trello
 
 #####Wireframe
-![](https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/C306cfd3655964b299ea33caa144215eb/projects/MftkpQMtEh/pages/e14c4abd54f242c69b7a16fa26b0a73f/image/e14c4abd54f242c69b7a16fa26b0a73f.png?1670370805473)
+![](https://i.imgur.com/bicmWPZ.png)
 
 
-![](https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/C306cfd3655964b299ea33caa144215eb/projects/MftkpQMtEh/pages/e14c4abd54f242c69b7a16fa26b0a73f/image/e14c4abd54f242c69b7a16fa26b0a73f.png?1670371442286)
+![](https://i.imgur.com/5zQecsZ.png)
 
 ![](https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/C306cfd3655964b299ea33caa144215eb/projects/MftkpQMtEh/pages/e14c4abd54f242c69b7a16fa26b0a73f/image/e14c4abd54f242c69b7a16fa26b0a73f.png?1670371752164)
 
