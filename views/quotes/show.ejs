@@ -10,6 +10,21 @@
     <h2>
         Your quote from <%=quote.movie%>
     </h2>
+
+    <div>
+        "<%=quote.quote%>"
+        - <%=quote.character%> <br><br>
+        <%=quote.movie%>, <%=quote.year%><br><br>
+        Played by: <%=quote.actor%><br><br>
+    </div><br><br>
+
+    <div>
+        <a href="/quotes"><button>Back To All Quotes</button></a>
+        <a href="/quotes/<%=quote.id%>/edit"><button>Edit <%=quote.character%>'s Quote</button></a>
+        <form action="/quotes/<%=quote.id%>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete <%=quote.character%>'s Quote">
+        </form>
+    </div>
     
 </body>
 </html>

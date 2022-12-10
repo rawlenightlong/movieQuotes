@@ -7,6 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    
+<h2>
+    Edit your quote's infromation below!
+</h2>
+
+   <form action="/quotes/<%=quote._id%>?_method=PUT" method="post">
+
+    <input type="text" name="quote" placeholder="Quote Text" value="<%=quote.quote %>"><br><br>
+    <input type="text" name="character" placeholder="Character" value="<%=quote.character %>"><br><br>
+    <input type="text" name="movie" placeholder="Movie" value="<%=quote.movie %>"><br><br>
+    <input type="number" name="year" placeholder="Release Year" value="<%=quote.year %>"><br><br>
+    <input type="text" name="actor" placeholder="Actor/Actress" value="<%=quote.actor %>"><br><br>
+
+    <input type="submit" value="Edit Movie Quote!"><br><br>
+
+   </form>
+    <a href="/quotes"><button>Back to Quotes</button></a>
 </body>
 </html>

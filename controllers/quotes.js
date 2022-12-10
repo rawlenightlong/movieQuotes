@@ -10,7 +10,6 @@ const router = express.Router()
 router.get('/', (req, res) => {
     Quote.find({})
     .then((quotes) => {
-        console.log(quotes)
         res.render('quotes/index.ejs', {quotes})
     })
 })
@@ -29,9 +28,11 @@ router.post('/', (req, res) => {
 
 // EDIT ROUTE - GET
 router.get('/:id/edit', (req, res) => {
-    res.render('quotes/edit.ejs')
+    Quote.findById(req.params.id, (err, quote) => {
+        res.render('quotes/edit.ejs', {quote})
+    })
+    
 })
-
 
 
 // UPDATE ROUTE - POST
