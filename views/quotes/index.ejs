@@ -7,22 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Rawle's Movie Quote Database</h1>
-    <h4>"AY, I'm walkin' here!"</h4>
-    <a href="/quotes/new"><button>Add a new quote!</button></a>
-
-    <div class="quoteCards">
-        <% for (quote of quotes) { %>
-            <div class="card"><a href="quotes/<%=quote._id%>">
-                <div>
-                    <h3>
-                "<%=quote.quote%>"
-                    </h3>
+    <div class="mainpage">    
+        <h1>Rawle's Movie Quote Database</h1>
+        <h4><img src="https://media.tenor.com/0o8TAJDGJcMAAAAC/midnight-cowboy-dustin-hoffman.gif"></h4>
+        <a href="/quotes/new"><button>Add a new quote!</button></a>
+    
+        <div class="quoteCards">
+            <% for (quote of quotes) { %>
+                <div class="card"><a href="quotes/<%=quote._id%>">
+                    <div>
+                        <h3>
+                    "<%=quote.quote%>"
+                        </h3>
+                    </div>
+                </a>
+       <%     } %> 
                 </div>
-            </a>
-   <%     } %> 
-            </div>
+        </div>
     </div>
+
     
 </body>
 </html>
