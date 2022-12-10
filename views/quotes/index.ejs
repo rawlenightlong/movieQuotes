@@ -19,10 +19,21 @@
         <title>Rawle's Marvelous Movie Quotes</title>
     </head>
 <body>
+    <div class="sidebar">
+        <div class="searchbar">
+        <input type="text" placeholder="Search">
+        </div>
+        <div class="favorites">
+            Favorite Quotes:
+        </div>
+    </div>
+  
     <div class="container">
          
             <h1>Rawle's Movie Quote Database</h1>
+
             <h4><img src="https://media.tenor.com/0o8TAJDGJcMAAAAC/midnight-cowboy-dustin-hoffman.gif"></h4>
+
             <a href="/quotes/new"><button class="add">Add a new quote!</button></a>
         
             <div class="quoteCards">
@@ -32,8 +43,13 @@
                             <h3>
                         "<%=quote.quote%>"
                             </h3>
-                        
+                            
                     </a>
+                    <form action="/quotes/<%=quote.id%>?_method=DELETE" method="POST">
+                        <button type="submit" name="delete" style="padding: 0; border: none;" class="trashbutton">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2891/2891491.png" class="trash" />
+                          </button>
+                    </form>
                 </div>
            <%     } %> 
                     

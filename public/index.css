@@ -1,22 +1,65 @@
 
 body {
-    height: 100vh;
+    background-image: url('https://media1.fdncms.com/inlander/imager/u/original/24484900/movie-theater.jpg');
+    height: 98vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-areas: 
-    "sidebar content"
-}
+    "sidebar content";
 
+
+}
+.favorites{
+    background-color:rgb(255, 255, 255, 0.25)
+}
 .container {
-    background-color: beige;
+    background-color: rgb(255, 255, 255, 0.25);
+    border-radius: 3%;
     grid-area: content;
+    text-align: center;
+    scrollbar-width: none;
+    width: 90%;
+    justify-self: center;
+
+
+}
+a {
+    color:white;
+}
+.sidebar{
+    background-color: black;
 }
 
+.sidebar, .favorites {
+    grid-area: sidebar;
+}
+h1 {
+    text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+
+}
 .quoteCards{
+    width: auto;
+    height: 500px;
     grid-template: page;
     display: flex;
     flex-wrap: wrap;
-    
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.quoteCards::-webkit-scrollbar {
+    display:none;
 }
 
 a:link { text-decoration: none; }
@@ -32,17 +75,39 @@ a:active { text-decoration: none; }
 
 .card {
     display: flex;
+    flex-direction: column;
     height: 300px;
     width: 300px;
-    background-color: grey;
+    background-color: rgb(217, 184, 37);
     margin: 15px;
     padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-
+    border-radius: 20%;
 }
+
+.trash {
+    border-radius: 7%;
+    background-color: transparent;
+    width: 50%;
+    
+}
+
+.card:hover {
+    background-color:rgb(0, 0, 0);
+}
+
+.card:hover .trash {
+    background-color:red;
+}
+
 .add {
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+}
+.trashbutton {
+    width:50%;
+    background-color: transparent;
 }
