@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="mainpage">    
-        <h1>Rawle's Movie Quote Database</h1>
-        <h4><img src="https://media.tenor.com/0o8TAJDGJcMAAAAC/midnight-cowboy-dustin-hoffman.gif"></h4>
-        <a href="/quotes/new"><button>Add a new quote!</button></a>
     
-        <div class="quoteCards">
-            <% for (quote of quotes) { %>
-                <div class="card"><a href="quotes/<%=quote._id%>">
-                    <div>
-                        <h3>
-                    "<%=quote.quote%>"
-                        </h3>
+    <%- include('../partials/head.ejs')%>
+
+<body>
+    <div class="container">
+        <div class="mainpage">    
+            <h1>Rawle's Movie Quote Database</h1>
+            <h4><img src="https://media.tenor.com/0o8TAJDGJcMAAAAC/midnight-cowboy-dustin-hoffman.gif"></h4>
+            <a href="/quotes/new"><button>Add a new quote!</button></a>
+        
+            <div class="quoteCards">
+                <% for (quote of quotes) { %>
+                    <div class="card"><a href="quotes/<%=quote._id%>">
+                        <div>
+                            <h3>
+                        "<%=quote.quote%>"
+                            </h3>
+                        </div>
+                    </a>
+           <%     } %> 
                     </div>
-                </a>
-       <%     } %> 
-                </div>
+            </div>
         </div>
     </div>
 
