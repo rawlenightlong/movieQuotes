@@ -90,7 +90,8 @@ a:active { text-decoration: none; }
 .trash {
     border-radius: 7%;
     background-color: transparent;
-    width: 50%;
+    width: 40%;
+    cursor: pointer;
     
 }
 
