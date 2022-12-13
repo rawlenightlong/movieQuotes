@@ -1,0 +1,23 @@
+.submitform {
+    background-color: blueviolet;
+    width: fit-content;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10%;
+
+
+}
+
+input {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 4%;
+    width: 60%;
+}
+
+button {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;
+}

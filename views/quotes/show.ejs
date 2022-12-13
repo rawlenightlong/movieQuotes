@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <%- include('../partials/head.ejs')%>
-
+        <!-- JQuery -->
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+      ></script>
+    
+      <!-- OUR CSS AND JS -->
+      <link rel="stylesheet" href="/show.css" />
+      <script src="/app.js" defer></script>
+        <title>Rawle's Marvelous Movie Quotes</title>
+    </head>
 <body>
+    <div class="container">
+    <h1>Rawle's Marvelous Movie Quotes</h1>
+    <div class="fullquote">
     <h2>
         Your quote from <%=quote.movie%>
     </h2>
 
-    <div>
+    <div class="showcard">
         "<%=quote.quote%>"
         - <%=quote.character%> <br><br>
         <%=quote.movie%>, <%=quote.year%><br><br>
-        Played by: <%=quote.actor%><br><br>
-    </div><br><br>
-
-    <div>
-        <a href="/quotes"><button>Back To All Quotes</button></a>
+        Played by:      <%=quote.actor%><br><br>
+    </div>
+    <div class="showbuttons">
+        
         <a href="/quotes/<%=quote.id%>/edit"><button>Edit <%=quote.character%>'s Quote</button></a>
         <form action="/quotes/<%=quote.id%>?_method=DELETE" method="POST">
             <input type="submit" value="Delete <%=quote.character%>'s Quote">
         </form>
+        <a href="/quotes"><button>Back To All Quotes</button></a>
     </div>
+    </div>
+    </div>
+    
     
 </body>
 </html>

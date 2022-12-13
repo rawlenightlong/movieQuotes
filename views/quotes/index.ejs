@@ -30,11 +30,11 @@
   
     <div class="container">
          
-            <h1>Rawle's Movie Quote Database</h1>
+            <h1>Rawle's Marvelous Movie Quotes</h1>
 
             <h4><img src="https://media.tenor.com/0o8TAJDGJcMAAAAC/midnight-cowboy-dustin-hoffman.gif"></h4>
 
-            <a href="/quotes/new"><button class="add">Add a new quote!</button></a>
+            <a href="/quotes/new"><button class="add">Add a new quote!</button></a><br><br>
         
             <div class="quoteCards">
                 <% for (quote of quotes) { %>
@@ -45,11 +45,14 @@
                             </h3>
                             
                     </a>
+                    <div class="editTrash">
                     <form action="/quotes/<%=quote.id%>?_method=DELETE" method="POST">
                         <button type="submit" name="delete" style="padding: 0; border: none;" class="trashbutton">
                             <img src="https://cdn-icons-png.flaticon.com/512/2891/2891491.png" class="trash" />
                           </button>
                     </form>
+                    <a href="/quotes/<%=quote.id%>/edit"><img src="https://i.imgur.com/vz3aUWe.png" class="pencil"></a>
+                    </div>
                 </div>
            <%     } %> 
                     

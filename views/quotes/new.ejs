@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <%- include('../partials/head.ejs')%>
-
+        <!-- JQuery -->
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+      ></script>
+    
+      <!-- OUR CSS AND JS -->
+      <link rel="stylesheet" href="/add.css" />
+      <script src="/app.js" defer></script>
+        <title>Rawle's Marvelous Movie Quotes</title>
+    </head>
 <body>
-<h2>
+    <div class="submitform">
+        <h2>
     Add your favorite quote's information below!
-</h2>
+        </h2>
 
    <form action="/quotes" method="post">
 
-    <input type="text" name="quote" placeholder="Quote Text"><br><br>
-    <input type="text" name="character" placeholder="Character"><br><br>
-    <input type="text" name="movie" placeholder="Movie"><br><br>
-    <input type="number" name="year" placeholder="Release Year"><br><br>
-    <input type="text" name="actor" placeholder="Actor/Actress"><br><br>
+   Quote:  <input type="text" name="quote" placeholder="Quote Text"><br><br>
+    Movie Character:  <input type="text" name="character" placeholder="Character"><br><br>
+    Movie:  <input type="text" name="movie" placeholder="Movie"><br><br>
+    Release Year:  <input type="number" name="year" placeholder="Year"><br><br>
+    Performer:  <input type="text" name="actor" placeholder="Actor/Actress"><br><br>
 
     <input type="submit" value="Add Movie Quote!"><br><br>
 
-   </form>
-    <a href="/quotes"><button>Back to Quotes</button></a>
+   </form><br><br>
+   <a href="/quotes"><button>Back to All Quotes</button></a>
+</div>
+
 </body>
 </html>
