@@ -26,8 +26,11 @@ body {
 
 a {
     color:white;
-    width: 80%%;
+    padding-left: -10px;
+    padding-right: -10px;
+
 }
+
 .sidebar{
     background-color: black;
     height: auto;
@@ -49,11 +52,13 @@ img {
 }
 
 .pencil {
+    display: block;
     width: 30%;
     height: 30%;
-    background: transparent;
     border-radius: 7%;
-    padding: 0px, -10px, 0px, -10px;
+    padding-left: -10px;
+    padding-right: -10px;
+    margin: 0 auto;
 }
 
 .quoteCards{
@@ -108,6 +113,7 @@ a:active { text-decoration: none; }
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+    column-gap: 1em;
 }
 
 .card:hover {
