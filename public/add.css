@@ -1,5 +1,9 @@
+body {
+    background-image: url('https://media1.fdncms.com/inlander/imager/u/original/24484900/movie-theater.jpg');
+}
+
 .submitform {
-    background-color: blueviolet;
+    background-color: rgb(85, 20, 175);
     width: fit-content;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-items: center;
@@ -7,6 +11,8 @@
     margin: auto;
     padding: 20px;
     border-radius: 10%;
+    color: white;
+    margin-top: 10%;
 
 
 }

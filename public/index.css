@@ -1,7 +1,7 @@
 
 body {
     background-image: url('https://media1.fdncms.com/inlander/imager/u/original/24484900/movie-theater.jpg');
-    height: 98vh;
+
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-areas: 
@@ -26,10 +26,11 @@ body {
 
 a {
     color:white;
+    width: 80%%;
 }
 .sidebar{
     background-color: black;
-    height: 99vh;
+    height: auto;
 }
 
 .sidebar, .favorites {
@@ -43,8 +44,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
-    height: 20%;
+    width: 33%;
+    height: 33%;
 }
 
 .pencil {
@@ -52,6 +53,7 @@ img {
     height: 30%;
     background: transparent;
     border-radius: 7%;
+    padding: 0px, -10px, 0px, -10px;
 }
 
 .quoteCards{
@@ -67,6 +69,7 @@ img {
     overflow-y: auto;
     scrollbar-width: none;
 }
+
 
 .quoteCards::-webkit-scrollbar {
     display:none;
