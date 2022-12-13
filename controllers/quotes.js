@@ -39,7 +39,7 @@ router.get('/:id/edit', (req, res) => {
 router.put('/:id', (req, res) => {
     const id = req.params.id
     Quote.findByIdAndUpdate(id, req.body, {new: true}, (err, quote) => {
-        res.redirect('/')
+        res.redirect(`/quotes/${id}`)
     })
 })
 
